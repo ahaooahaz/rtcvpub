@@ -27,7 +27,7 @@ COMMIT_ID ?= $(shell git rev-parse --short HEAD)
 BRANCH ?= $(shell git rev-parse --abbrev-ref HEAD)
 
 GO = go
-VERSION ?= 1.0.1
+VERSION ?= 0.0.1
 
 LDFLAGS += -X "$(REPO)/version.BuildTS=$(BUILT_TS)"
 LDFLAGS += -X "$(REPO)/version.GitHash=$(COMMIT_ID)"

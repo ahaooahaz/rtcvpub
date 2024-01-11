@@ -1,0 +1,18 @@
+builds:
+  - binary: WebRTCVideoPublish
+    main: ./cmd/WebRTCVideoPublish/
+    ldflags:
+      - -X "github.com/ahaooahaz/WebRTCVideoPublish/version.BuildTS={{.Date}}" -X "github.com/ahaooahaz/WebRTCVideoPublish/version.GitHash={{.Commit}}" -X "github.com/ahaooahaz/WebRTCVideoPublish/version.Version={{.Version}}" -X "github.com/ahaooahaz/WebRTCVideoPublish/version.GitBranch=main" -X "github.com/ahaooahaz/WebRTCVideoPublish/version.App=WebRTCVideoPublish"
+    env:
+    - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+
+archives:
+  - format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
+    format_overrides:
+      - goos: windows
+        format: zip
