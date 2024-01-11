@@ -1,3 +1,9 @@
+before:
+  hooks:
+    - go env
+    - go mod tidy
+
+
 builds:
   - binary: WebRTCVideoPublish
     main: ./cmd/WebRTCVideoPublish/
