@@ -1,7 +1,7 @@
 package webrtc
 
 import (
-	"github.com/ahaooahaz/WebRTCVideoPublish/cmd/WebRTCVideoPublish/child/webrtc/publish"
+	"github.com/ahaooahaz/rtcvpub/cmd/rtcvpub/child/webrtc/publish"
 	"github.com/spf13/cobra"
 )
 

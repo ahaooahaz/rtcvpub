@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/ahaooahaz/WebRTCVideoPublish/version"
+	"github.com/ahaooahaz/rtcvpub/version"
 	"github.com/spf13/cobra"
 )
 

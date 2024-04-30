@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/ahaooahaz/WebRTCVideoPublish/rtc"
+	"github.com/ahaooahaz/rtcvpub/rtc"
 	"github.com/pion/webrtc/v3"
 	"github.com/sirupsen/logrus"
 )

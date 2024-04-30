@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/ahaooahaz/WebRTCVideoPublish/cmd/WebRTCVideoPublish/child/version"
-	"github.com/ahaooahaz/WebRTCVideoPublish/cmd/WebRTCVideoPublish/child/webrtc"
+	"github.com/ahaooahaz/rtcvpub/cmd/rtcvpub/child/version"
+	"github.com/ahaooahaz/rtcvpub/cmd/rtcvpub/child/webrtc"
 
 	"github.com/sirupsen/logrus"
 )

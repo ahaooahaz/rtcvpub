@@ -1,4 +1,4 @@
-module github.com/ahaooahaz/WebRTCVideoPublish
+module github.com/ahaooahaz/rtcvpub
 
 go 1.20
 

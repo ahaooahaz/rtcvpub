@@ -5,8 +5,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/ahaooahaz/WebRTCVideoPublish/rtc"
-	zlmkit "github.com/ahaooahaz/WebRTCVideoPublish/wrapper/ZLMediaKit"
+	"github.com/ahaooahaz/rtcvpub/rtc"
+	zlmkit "github.com/ahaooahaz/rtcvpub/wrapper/ZLMediaKit"
 	"github.com/pion/webrtc/v3"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
