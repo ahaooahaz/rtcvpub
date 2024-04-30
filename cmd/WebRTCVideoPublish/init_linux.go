@@ -11,7 +11,6 @@ import (
 
 	"github.com/ahaooahaz/WebRTCVideoPublish/config"
 
-	"github.com/ahaooahaz/encapsutils"
 	"github.com/sirupsen/logrus"
 )
 
@@ -33,7 +32,7 @@ func initEnv() (err error) {
 	config.NOTIFYSENDSH = config.ANNALROOT + "/scripts/notify-send.sh"
 	config.ATJOBS = config.ANNALROOT + "/.at.jobs"
 
-	err = encapsutils.CreateDir(filepath.Dir(config.LOGFILE), os.ModePerm)
+	err = os.MkdirAll(filepath.Dir(config.LOGFILE), os.ModePerm)
 	if err != nil {
 		return
 	}
